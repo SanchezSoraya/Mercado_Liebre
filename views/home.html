@@ -7,50 +7,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mercado Liebre</title>
 
-  <link rel="stylesheet" href="../public/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
 </head>
+
 
 <body>
   <header>
 
-    <img src="../public/images/logo-mercado-liebre.svg">
+    <img src="images/logo-mercado-liebre.svg">
     <input type="text" placeholder="Barra de busqueda">
-    <button><i class="fas fa-search"></i></button>
-    <p><i class="fas fa-hand-holding-usd"></i>
+    <button> <i class="fas fa-search"></i></button>
+    <p id="texto"><i class="fas fa-hand-holding-usd"></i>
       Compra en cuotas y sin tarjeta de credito</p>
 
     <nav>
       <ul>
-        <a href="https://www.mercadolibre.com.co/ofertas">
-          <li> Oferta
-        </a></li>
-        <a href="https://www.mercadolibre.com.co/tiendas-oficiales">
-          <li>Tiendas Oficiales
-        </a></li>
-        <a href="https://www.mercadolibre.com.co/ayuda/Costos-de-vender-productos_870">
-          <li>Vender
-        </a></li>
-        <a href="https://www.mercadolibre.com.co/ayuda">
-          <li>Ayuda
-        </a></li>
+
+        <li> Oferta
+          </a></li>
+        <!--- <a href="https://www.mercadolibre.com.co/tiendas-oficiales">-->
+        <li>Tiendas Oficiales
+          </a></li>
+        <!--<a href="https://www.mercadolibre.com.co/ayuda/Costos-de-vender-productos_870">-->
+        <li>Vender
+          </a></li>
+        <!--<a href="https://www.mercadolibre.com.co/ayuda">-->
+        <li>Ayuda
+          </a></li>
       </ul>
 
       <ul>
-        <a href="https://vendedores.mercadolibre.com.co/nota/como-crear-una-cuenta-en-mercado-libre/">
-          <li>Creá tu cuenta<i class="fas fa-address-card"></i>
-        </a></li>
-        <a href="https://listado.mercadolibre.com.co/ingresar">
-          <li>Ingresá<i class="fas fa-sign-in-alt"></i>
-        </a></li>
-        <a href=" https://listado.mercadolibre.com.co/mis-compras">
-          <li>Mis compras <i class="fas fa-shopping-basket"></i>
-        </a></li>
+        <!--- <a href="https://vendedores.mercadolibre.com.co/nota/como-crear-una-cuenta-en-mercado-libre/">-->
+        <li>Creá tu cuenta <i class="fas fa-address-card"></i>
+          </a></li>
+        <!--<a href="https://listado.mercadolibre.com.co/ingresar">-->
+        <li>Ingresá <i class="fas fa-sign-in-alt"></i>
+          </a></li>
+        <!--- <a href=" https://listado.mercadolibre.com.co/mis-compras">-->
+        <li>Mis compras <i class="fas fa-shopping-basket"></i>
+          </a></li>
       </ul>
+      <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+
     </nav>
   </header>
   <section>
-    <img src="../public/images/img-home-banner.jpg" alt="">
+    <img src="images/img-home-banner.jpg" alt="">
   </section>
 
   <main>
@@ -58,28 +64,28 @@
     <section>
       <h3>Basado en tu última visita</h3>
       <article>
-        <img src="../public/images/img-cafetera-moulinex.jpg">
+        <img src="images/img-cafetera-moulinex.jpg">
         <p>$6.770</p>
         <p>40% OFF</p>
         <h4>Cafetera Moulinex</h4>
       </article>
 
       <article>
-        <img src="../public/images/img-macbook-pro-2019.jpg">
+        <img src="images/img-macbook-pro-2019.jpg">
         <p>$230.000</p>
         <p>20% OFF</p>
         <h4>MacBook Pro 2019</h4>
       </article>
 
       <article>
-        <img src="../public/images/img-samsung-galaxy-s10.jpg">
+        <img src="images/img-samsung-galaxy-s10.jpg">
         <p>$70.500</p>
         <p>10% OFF</p>
         <h4>Samsung Galaxy S10</h4>
       </article>
 
       <article>
-        <img src="../public/images/img-tv-samsung-smart.jpg">
+        <img src="images/img-tv-samsung-smart.jpg">
         <p>$23.200</p>
         <p>5% OFF</p>
         <h4>SmartTv Samsung 43"</h4>
@@ -89,28 +95,28 @@
     <section>
       <h2>Ofertas</h2>
       <article>
-        <img src="../public/images/img-cafetera-moulinex.jpg">
+        <img src="images/img-cafetera-moulinex.jpg">
         <p>$6.770</p>
         <p>40% OFF</p>
         <h4>Cafetera Moulinex</h4>
       </article>
 
       <article>
-        <img src="../public/images/img-macbook-pro-2019.jpg">
+        <img src="images/img-macbook-pro-2019.jpg">
         <p>$230.000</p>
         <p>20% OFF</p>
         <h4>MacBook Pro 2019</h4>
       </article>
 
       <article>
-        <img src="../public/images/img-tv-samsung-smart.jpg">
+        <img src="images/img-tv-samsung-smart.jpg">
         <p>$70.500</p>
         <p>10% OFF</p>
         <h4>Samsung Galaxy S10</h4>
       </article>
 
       <article>
-        <img src="../public/images/img-samsung-galaxy-s10.jpg">
+        <img src="images/img-samsung-galaxy-s10.jpg">
         <p>$23.200</p>
         <p>5% OFF</p>
         <h4>SmartTv Samsung 43"</h4>
@@ -119,21 +125,24 @@
   </main>
 
   <footer>
-    <ul>
-      <li><b>Pagá con tarjeta o en efectivo</b>
+    <ul class="piePagina">
+      <li><i id="iconos" class="fas fa-credit-card"></i><br>
+        <b>Pagá con tarjeta o en efectivo</b>
         <p>Con Mercado Liebre Cash, tenés cuotas sin<br>
           interés con tarjeta o efectivo en<br>
           puntos de pago.
           ¡Y siempre es seguro!</p>
       </li>
 
-      <li><b>Envío gratis desde $ 2.500</b>
+      <li><i id="iconos" class="fas fa-gift"></i><br>
+        <b>Envío gratis desde $ 2.500</b>
         <p>Solo por estar registrad@ en Mercado Liebre <br>
           tenés envíos gratis en miles de productos. Es <br>
           un beneficio de Mercado Puntos.</p>
       </li>
 
-      <li><b>Seguridad, de principio a fin</b>
+      <li><i id="iconos" class="fas -solid fa-user-shield"></i><br>
+        <b>Seguridad, de principio a fin</b>
         <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre,<br>
           no hay nada que no puedas hacer, porque estás<br>
           siempre protegid@.

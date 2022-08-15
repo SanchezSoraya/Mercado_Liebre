@@ -5,4 +5,30 @@ body {
   background-color: yellow;
   
 }
-
+ul {
+  list-style: none;
+}
+#texto{
+  text-align: center;
+}
+.burger-menu{
+   color: white;
+   background-color: blue;
+   margin: 0 auto;
+   width: fit-content;
+   border-radius: 5px;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   
+}
+.piePagina{
+  text-align: center;
+}
+#iconos{
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: blue;
+  
+}
