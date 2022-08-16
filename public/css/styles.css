@@ -32,3 +32,39 @@ ul {
   color: blue;
   
 }
+main {
+  width: 90%;
+  margin-bottom: 10px;
+
+}
+h4{
+  padding: 0;
+  margin: 0;
+}
+.circulo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid green;
+}
+#envio{
+  padding-left: 5px;
+  padding-top: 8px;
+  color: green;
+}
+article{
+  width: 200px;
+  height: 470px;
+  background-color: gray;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.img-article{
+  width: 200px;
+  height: 250px;
+}
+.body-article{
+  background-color: white;
+}
