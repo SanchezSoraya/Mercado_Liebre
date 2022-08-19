@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: white;
+  background-color: rgba(235,235,235,255);
   font-family: 'Roboto', sans-serif;
   
 }
@@ -44,6 +44,10 @@ section.banner img{
 }
 .precio-articulo .discount { 
   flex-grow: 0.7;
+  
+}
+.description{
+  margin-top: 5px;
 }
 #texto{
   text-align: center;
@@ -81,16 +85,7 @@ main section article{
 main section article img{
    width: 100%;
 }
-/*article{
-  width: 300px;
-  height: 470px;
-  background-color: gray;
-  margin-top: 0;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin:0 auto;
-}*/
+
 main section article i, .discount{
   color: #39b54a;
 }
@@ -116,22 +111,26 @@ main section article i{
 .productos{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .productos > article{
-  margin: 25px;
+  margin: 20px;
+
 }
 
 article {
-  border-radius: 5px;
-  padding: 15px;
-  -webkit-box-shadow: 0px 1px 18px 3px rgba(92,90,92,1);
--moz-box-shadow: 0px 1px 18px 3px rgba(92,90,92,1);
-box-shadow: 0px 1px 18px 3px rgba(92,90,92,1);
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 1px 18px 3px rgba(191,191,191,255);
+-moz-box-shadow: 0px 1px 18px 3px rgba(191,191,191,255);
+box-shadow: 0px 1px 18px 3px rgba(191,191,191,255);
 }
 
 .img-article{
-  width: 200px;
-  height: 250px;
+  width: 230px;
+  height: 300px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h4{
@@ -140,14 +139,6 @@ h4{
 }
 h3, h2{
   text-align: center;
-}
-
-
-#envio{
-  position: absolute;
-  padding-left: 5px;
-  padding-top: 8px;
-  color: green;
 }
 
 
