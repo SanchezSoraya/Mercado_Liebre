@@ -1,6 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   background-color: white;
@@ -28,11 +29,21 @@ header ul li a{
   text-decoration: none;
   color: black;
 }
+
 ul {
   list-style: none;
 }
 section.banner img{
   width: 100%;
+}
+.precio-articulo{
+  display: flex;
+}
+.precio-articulo .price { 
+   flex-grow: 0.3;
+}
+.precio-articulo .discount { 
+  flex-grow: 0.7;
 }
 #texto{
   text-align: center;
@@ -60,28 +71,17 @@ section.banner img{
 }
 main {
   width: 90%;
-  margin-bottom: 10px;
+  margin: 0 auto;
 
 }
-h4{
-  padding: 0;
-  margin: 0;
+main section article{
+  background-color: #fff;
+  margin: 10px 0px;
 }
-h3, h2{
-  text-align: center;
+main section article img{
+   width: 100%;
 }
-.circulo{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 3px solid green;
-}
-#envio{
-  padding-left: 5px;
-  padding-top: 8px;
-  color: green;
-}
-article{
+/*article{
   width: 300px;
   height: 470px;
   background-color: gray;
@@ -90,22 +90,84 @@ article{
   padding-left: 10px;
   padding-right: 10px;
   margin:0 auto;
+}*/
+main section article i, .discount{
+  color: #39b54a;
 }
+article div.main-article{
+  width: 100%;
+  border-top: 2px solid #ebebeb;
+  padding: 15px;
+  position: relative;
+}
+main section article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+.productos{
+  display: flex;
+  flex-wrap: wrap;
+}
+.productos > article{
+  margin: 25px;
+}
+
+article {
+  border-radius: 5px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 1px 18px 3px rgba(92,90,92,1);
+-moz-box-shadow: 0px 1px 18px 3px rgba(92,90,92,1);
+box-shadow: 0px 1px 18px 3px rgba(92,90,92,1);
+}
+
 .img-article{
   width: 200px;
   height: 250px;
 }
-.body-article{
-  background-color: white;
+
+h4{
+  padding: 0;
+  margin: 0;
+}
+h3, h2{
+  text-align: center;
 }
 
-@media (min-width: 361px){
+
+#envio{
+  position: absolute;
+  padding-left: 5px;
+  padding-top: 8px;
+  color: green;
+}
+
+
+/*
+  Media Queries
+*/
+
+/*Para celulares*/
+@media (max-width: 768px){
   main section article .description{
       display: block;
   }
 
+  /*Para tablet falta*/
   main section article{
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .productos{
+    flex-direction: column;
+
   }
 }
 
