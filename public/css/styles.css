@@ -1,131 +1,148 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 body {
-  background-color: rgba(235,235,235,255);
-  font-family: 'Roboto', sans-serif;
-  
+  background-color: rgba(235, 235, 235, 255);
+  font-family: "Roboto", sans-serif;
 }
-div.top-header{
-  padding: 5%;
+.top-header {
+  display: flex;
 }
 
-header{
-  background-color: #EAC926;
+header {
+  background-color: #eac926;
 }
-header div.logo{
+.logo {
   width: 50%;
   padding: 10px;
 }
-header nav{
-  font-size: 12px;
+.buscador {
+  width: 50%;
+  padding-top: 50px;
 }
-header ul li{
+.buscador button {
+  width: 35px;
+  height: 35px;
+}
+.barra {
+  width: 50%;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.menu-contenedor {
+  display: none !important;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-contenedor ul {
+  display: flex;
+}
+header ul li {
   list-style-type: none;
 }
-header ul li a{
+header ul li a {
   text-decoration: none;
   color: black;
+  margin: 10px;
 }
 
 ul {
   list-style: none;
 }
-section.banner img{
+section.banner img {
   width: 100%;
 }
-.precio-articulo{
+.precio-articulo {
   display: flex;
 }
-.precio-articulo .price { 
-   flex-grow: 0.3;
+.precio-articulo .price {
+  flex-grow: 0.3;
 }
-.precio-articulo .discount { 
+.precio-articulo .discount {
   flex-grow: 0.7;
-  
 }
-.description{
+.description {
   margin-top: 5px;
 }
-#texto{
+#texto {
   text-align: center;
 }
-.burger-menu{
-   color: white;
-   background-color: blue;
-   margin: 0 auto;
-   width: fit-content;
-   border-radius: 5px;
-   padding-top: 10px;
-   padding-left: 10px;
-   padding-right: 10px;
-   padding-bottom: 10px;
-   
+.burger-menu {
+  display: block;
+  color: white;
+  background-color: blue;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
-.piePagina{
+.piePagina {
   text-align: center;
 }
-#iconos{
+#iconos {
   font-size: 2em;
   margin-bottom: 10px;
   color: blue;
-  
 }
 main {
   width: 90%;
   margin: 0 auto;
-
 }
-main section article{
+main section article {
   background-color: #fff;
   margin: 10px 0px;
 }
-main section article img{
-   width: 100%;
+main section article img {
+  width: 100%;
 }
 
-main section article i, .discount{
+main section article i,
+.discount {
   color: #39b54a;
 }
-article div.main-article{
+article div.main-article {
   width: 100%;
   border-top: 2px solid #ebebeb;
   padding: 15px;
   position: relative;
 }
-main section article i{
+main section article i {
   display: block;
   font-size: 16px;
   padding: 5px;
   width: 30px;
   height: 30px;
   border: 1px solid #39b54a;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
   right: 20px;
   top: -15px;
 }
-.productos{
+.productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.productos > article{
+.productos > article {
   margin: 20px;
-
 }
 
 article {
   border-radius: 6px;
-  -webkit-box-shadow: 0px 1px 18px 3px rgba(191,191,191,255);
--moz-box-shadow: 0px 1px 18px 3px rgba(191,191,191,255);
-box-shadow: 0px 1px 18px 3px rgba(191,191,191,255);
+  -webkit-box-shadow: 0px 1px 18px 3px rgba(191, 191, 191, 255);
+  -moz-box-shadow: 0px 1px 18px 3px rgba(191, 191, 191, 255);
+  box-shadow: 0px 1px 18px 3px rgba(191, 191, 191, 255);
 }
 
-.img-article{
+.img-article {
   width: 230px;
   height: 300px;
   padding-top: 20px;
@@ -133,35 +150,46 @@ box-shadow: 0px 1px 18px 3px rgba(191,191,191,255);
   padding-right: 20px;
 }
 
-h4{
+h4 {
   padding: 0;
   margin: 0;
 }
-h3, h2{
+h3,
+h2 {
   text-align: center;
 }
-
 
 /*
   Media Queries
 */
 
 /*Para celulares*/
-@media (max-width: 768px){
-  main section article .description{
-      display: block;
+@media (max-width: 768px) {
+  main section article .description {
+    display: block;
   }
 
   /*Para tablet falta*/
-  main section article{
+  @media only screen and (min-width: 768px) {
+    main section article {
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
   }
-  .productos{
+  .productos {
     flex-direction: column;
-
   }
 }
 
-@media (min-width: 769px){
+/* / Medium devices (landscape tablets, 768px and up) / */
+@media only screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+  .menu-contenedor {
+    display: flex !important;
+  }
+}
 
+/* / Large devices (laptops/desktops, 992px and up) / */
+@media only screen and (min-width: 992px) {
 }
