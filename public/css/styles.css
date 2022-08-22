@@ -19,8 +19,12 @@ header {
   padding: 10px;
 }
 .buscador {
+  display: flex;
   width: 50%;
   padding-top: 50px;
+}
+.buscador #texto {
+  padding-left: 20px;
 }
 .buscador button {
   width: 35px;
@@ -158,6 +162,9 @@ h3,
 h2 {
   text-align: center;
 }
+.compras-cuotas {
+  text-align: center;
+}
 
 /*
   Media Queries
@@ -177,6 +184,18 @@ h2 {
   }
   .productos {
     flex-direction: column;
+  }
+  .buscador {
+    display: block;
+  }
+  .buscador #texto {
+    position: relative;
+    top: 15px;
+    right: 167px;
+    width: 329px;
+  }
+  .burger-menu {
+    margin-top: 20px;
   }
 }
 
