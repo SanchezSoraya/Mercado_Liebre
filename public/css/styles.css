@@ -85,8 +85,22 @@ section.banner img {
   padding-right: 10px;
   padding-bottom: 10px;
 }
-.piePagina {
+footer {
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.footer-container > .footer-item {
+  margin: 20px;
+}
+.footer-item {
+  display: block;
 }
 #iconos {
   font-size: 2em;
@@ -96,11 +110,7 @@ section.banner img {
 #iconos:hover {
   color: #8c9bfa;
 }
-#copy {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-}
+
 main {
   width: 90%;
   margin: 0 auto;
@@ -123,7 +133,7 @@ article div.main-article {
   padding: 15px;
   position: relative;
 }
-.main-article:hover > .description {
+article:hover .description {
   visibility: visible;
 }
 
@@ -160,6 +170,7 @@ article:hover {
   -webkit-box-shadow: 0px 2px 5px 8px rgba(143, 141, 143, 1);
   -moz-box-shadow: 0px 2px 5px 8px rgba(143, 141, 143, 1);
   box-shadow: 0px 2px 5px 8px rgba(143, 141, 143, 1);
+  transform: scale(1.5);
 }
 
 article {
@@ -167,11 +178,11 @@ article {
   -webkit-box-shadow: 0px 1px 18px 3px rgba(191, 191, 191, 255);
   -moz-box-shadow: 0px 1px 18px 3px rgba(191, 191, 191, 255);
   box-shadow: 0px 1px 18px 3px rgba(191, 191, 191, 255);
+  transition: transform 0.2s;
 }
 
 .img-article {
   width: 230px;
-  height: 300px;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
