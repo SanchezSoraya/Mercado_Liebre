@@ -93,6 +93,14 @@ section.banner img {
   margin-bottom: 10px;
   color: blue;
 }
+#iconos:hover {
+  color: #8c9bfa;
+}
+#copy {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 main {
   width: 90%;
   margin: 0 auto;
