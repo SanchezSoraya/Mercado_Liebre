@@ -5,20 +5,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/login-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
-  <form action="/" method="GET">
-    <p>
-      <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
-    </p>
-    <p>
-      <input type="password" name="password" id="password" placeholder="Elegi tu contraseña">
-    </p>
+  <header>
+    <div class="top-header">
+      <img class="logo" src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+      <div class="buscador" action="#" method="GET">
+        <input class="barra" type="text" placeholder="Barra de busqueda">
+        <button> <i class="fas fa-search"></i></button>
+        <p id="texto">
+          <i class="fas fa-hand-holding-usd">
+          </i>Compra en cuotas y sin tarjeta de credito
+        </p>
+      </div>
+    </div>
 
-  </form>
+    <nav class="menu-contenedor">
+      <ul>
 
+        <li><a href="#">Oferta</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="/register">Creá tu cuenta <i class="fas fa-address-card"></i></a></li>
+        <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+      </ul>
+
+    </nav>
+    <div class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+  <main class="login">
+    <form action="/" method="GET">
+      <div class="item-login">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
+      </div>
+      <div class="item-login">
+        <input type="password" name="password" id="password" placeholder="Elegi tu contraseña">
+      </div>
+      <div class="item-login">
+        <a href="/"><button class="boton-login" type="submit">Enviar</button></a>
+      </div>
+
+    </form>
+  </main>
 </body>
 
 </html>

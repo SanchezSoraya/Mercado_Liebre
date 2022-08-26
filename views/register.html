@@ -5,47 +5,85 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/register-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
-  <div class="formulario">
+  <header>
+    <div class="top-header">
+      <img class="logo" src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+      <div class="buscador" action="#" method="GET">
+        <input class="barra" type="text" placeholder="Barra de busqueda">
+        <button> <i class="fas fa-search"></i></button>
+        <p id="texto">
+          <i class="fas fa-hand-holding-usd">
+          </i>Compra en cuotas y sin tarjeta de credito
+        </p>
+      </div>
+    </div>
+
+    <nav class="menu-contenedor">
+      <ul>
+
+        <li><a href="#">Oferta</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="/register">Creá tu cuenta <i class="fas fa-address-card"></i></a></li>
+        <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+      </ul>
+
+    </nav>
+    <div class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+  <main class="register">
     <form action="/" method="GET">
-      <p>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
-      </p>
+      <div class="item-form">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" minlength="3" maxlength="40"
+          title="Escriba su nombre completo" required>
+      </div>
 
-      <p>
-
+      <div class="item-form">
         <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
-      </p>
+      </div>
 
-      <p>
-
+      <div class="item-form">
         <input type="email" name="email" id="email" placeholder="E-mail">
-      </p>
+      </div>
 
-      <p>
+      <div class="item-form">
         <label for="start">Fecha de nacimiento</label><br>
+      </div>
+
+      <div class="item-form">
         <input type="date" name="date" id="date" placeholder="Fecha de nacimiento">
-      </p>
+      </div>
 
-      <p>
-
+      <div class="item-form">
         <input type="text" name="nombre" id="nombre" placeholder="Domicilio">
-      </p>
+      </div>
 
-
-      <div class="perfil-usuario">
+      <div class="item-form perfil-usuario">
         <label>Perfil del usuario</label><br>
         <input type="radio" name="comprador" id="comprador" value="comprador">
         <label for="comprador">Comprador</label>
 
         <input type="radio" name="vendedor" id="vendedor" value="vendedor">
         <label for="vendedor">Vendedor</label>
-      </div><br>
+      </div>
 
-      <div class="interes">
+      <div class="item-form interes">
         <label>Intereses</label><br>
         <input type="checkbox" name="electronico" id="electronico" value="Electro">
         <label for="electro">Electro</label><br>
@@ -64,31 +102,26 @@
 
       </div>
 
-      <div>
+      <div class="item-form">
         <label>Seleccionar una imagen de perfil:</label><br>
         <input type="file" name="fotoPerfil" accept=".jpg">
       </div>
-      <div>
-        <label for="contrasena">Contraseña</label>
-        <input type="password" name="contrasena" id="contrasena">
-        <label for="confirmacionContrasena">Confirma tu contraseña</label>
-        <input type="password" name="confirnacionContrasena" id="confirmacionContrasena">
+      <div class="item-form">
+        <input type="password" name="contrasena" id="contrasena" placeholder="contraseña">
       </div>
-      <div>
-        <a href="/"><button type="submit">Enviar</button></a>
+      <div class="item-form">
+        <input type="password" name="confirnacionContrasena" id="confirmacionContrasena"
+          placeholder="confirmar contraseña">
       </div>
-
-      <div>
-        <button type="reset">Borrar todos los datos</button>
+      <div class="item-form">
+        <a href="/"><button class="boton-enviar" type="submit">Enviar</button></a>
       </div>
 
-
-
-
-
-
+      <div>
+        <button class="boton-borrar" type="reset">Borrar todos los datos</button>
+      </div>
     </form>
-  </div>
+  </main>
 
 </body>
 
