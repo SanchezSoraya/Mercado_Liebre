@@ -1,3 +1,14 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+a {
+  color: white;
+}
 .login {
   background: #ebebeb;
   position: relative;
@@ -6,15 +17,15 @@
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-
-  -webkit-box-shadow: 1px 2px 5px 7px rgba(143, 141, 143, 1);
-  -moz-box-shadow: 1px 2px 5px 7px rgba(143, 141, 143, 1);
-  box-shadow: 1px 2px 5px 7px rgba(143, 141, 143, 1);
 }
 .item-login {
   margin-top: 25px;
   display: flex;
   justify-content: center;
+}
+.item-login input:focus {
+  outline: 0 none;
+  border: 3px solid blue;
 }
 
 input[type="text"],
@@ -31,10 +42,11 @@ input[type="password"] {
   background-color: #007bff;
   color: white;
   transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out;
-  width: 830px;
+  width: 50%;
   height: 35px;
   font-family: "Times New Roman", Times, serif;
   font-size: 25px;
+  cursor: pointer;
 }
 .boton-login:hover,
 .boton-login:focus {

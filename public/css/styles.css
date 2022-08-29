@@ -2,10 +2,10 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 body {
   background-color: rgba(235, 235, 235, 255);
-  font-family: "Roboto", sans-serif;
 }
 .top-header {
   display: flex;
@@ -36,6 +36,10 @@ header {
   border-radius: 5px;
   padding: 0 0 0 15px;
 }
+.barra:focus {
+  outline: 0 none;
+  border: 3px solid blue;
+}
 
 .menu-contenedor {
   display: none !important;
@@ -46,6 +50,9 @@ header {
 }
 .menu-contenedor ul {
   display: flex;
+}
+.menu-contenedor ul li:hover {
+  font-weight: bold;
 }
 header ul li {
   list-style-type: none;
@@ -78,7 +85,7 @@ section.banner img {
 .burger-menu {
   display: block;
   color: white;
-  background-color: blue;
+  background-color: #03264c;
   margin: 0 auto;
   width: fit-content;
   border-radius: 5px;
@@ -86,6 +93,9 @@ section.banner img {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+}
+.burger-menu i {
+  color: white;
 }
 footer {
   text-align: center;
@@ -111,6 +121,7 @@ footer {
 }
 #iconos:hover {
   color: #8c9bfa;
+  cursor: pointer;
 }
 
 main {
@@ -128,6 +139,9 @@ main section article img {
 main section article i,
 .discount {
   color: #39b54a;
+}
+i {
+  color: #03264c;
 }
 article div.main-article {
   width: 100%;
