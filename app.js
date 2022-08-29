@@ -26,7 +26,7 @@ app.post("/register", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, function () {
   console.log("servidor funcionando en el puerto 3000")
 });
 
