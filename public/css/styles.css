@@ -74,7 +74,6 @@ header ul li {
 header ul li a {
   text-decoration: none;
   color: black;
-  margin: 10px;
 }
 
 ul {
@@ -272,6 +271,9 @@ footer {
   .burger-menu {
     margin-top: 20px;
   }
+  header ul li a {
+    margin-right: 8px;
+  }
 }
 
 /* / Medium devices (landscape tablets, 768px and up) / */
@@ -282,8 +284,14 @@ footer {
   .menu-contenedor {
     display: flex !important;
   }
+  header ul li a {
+    margin-right: 8px;
+  }
 }
 
 /* / Large devices (laptops/desktops, 992px and up) / */
 @media only screen and (min-width: 992px) {
+  header ul li a {
+    margin: 10px;
+  }
 }
