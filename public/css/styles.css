@@ -4,9 +4,23 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+/* Scroll Personalizado */
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #03264c;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border-right: 2px solid #03264c;
+}
+/*Body*/
 body {
   background-color: rgba(235, 235, 235, 255);
 }
+
 .top-header {
   display: flex;
 }
@@ -97,33 +111,8 @@ section.banner img {
 .burger-menu i {
   color: white;
 }
-footer {
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-.footer-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.footer-container > .footer-item {
-  margin: 20px;
-}
-.footer-item {
-  display: block;
-}
-#iconos {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: blue;
-}
-#iconos:hover {
-  color: #8c9bfa;
-  cursor: pointer;
-}
 
+/*Main section article*/
 main {
   width: 90%;
   margin: 0 auto;
@@ -220,20 +209,36 @@ h2 {
 .compras-cuotas {
   text-align: center;
 }
+/*Footer*/
+footer {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.footer-container > .footer-item {
+  margin: 20px;
+}
+.footer-item {
+  display: block;
+}
+#iconos {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: blue;
+}
+#iconos:hover {
+  color: #8c9bfa;
+  cursor: pointer;
+}
 .piePagina {
   display: flex;
   justify-content: center;
-}
-/* Scroll Personalizado */
-body::-webkit-scrollbar {
-  width: 10px;
-  background: #03264c;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  border-right: 2px solid #03264c;
 }
 
 /*
